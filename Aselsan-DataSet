@@ -11,23 +11,20 @@ class AselsanData():
         self.data=pd.read_csv(self.folderName)
         self.columns=self.data.columns
      
-    def TimeSeriesData(self,method='regression',timeWindow=30):
+    def TimeSeriesData(self,method='regression',time=60):
+    # 60 days historical data used to estimate 61th day price 
     
-        X2=np.zeros((self.data.shape[0]-timeWindow,timeWindow))
+        X2=np.zeros((self.data.shape[0]-time,time))
         y=np.zeros((X2.shape[0],1))
         
         for i in range(y.shape[0]):
-            X2[i,:]=self.data['Open'][i:i+timeWindow]
+            X2[i,:]=self.data['Open'][i:i+time] # open price is considered 
             if method=='regression':
-                y[i]=self.data['Open'][i+timeWindow]
+                y[i]=self.data['Open'][i+time] 
             if method=='classification':
-                y[i]=self.data['High'][i+timeWindow]/self.data['Open'][i+timeWindow-1]
+                y[i]=self.data['High'][i+time]/self.data['Open'][i+time-1]
                 
                 
-        return np.flip(X2,axis=0),np.flip(y,axis=0)
-        
-    def getCloseData(self):
-        return np.flip(self.data['Open'].values)
     
 asl=AselsanData()
-X2,y=asl.TimeSeriesData(method='classification',timeWindow = 30)
+X2,y=asl.TimeSeriesData(method='classification',time = 60)
