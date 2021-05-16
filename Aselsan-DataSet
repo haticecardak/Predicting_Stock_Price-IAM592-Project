@@ -1,0 +1,33 @@
+import numpy as np 
+import pandas as pd
+import os
+
+X2=pd.read_csv('../dataset/ASELS_Histdata.csv')
+
+class AselsanData():
+
+    def __init__(self):
+        self.folderName='../dataset/ASELS_Histdata.csv'
+        self.data=pd.read_csv(self.folderName)
+        self.columns=self.data.columns
+     
+    def TimeSeriesData(self,method='regression',timeWindow=30):
+    
+        X2=np.zeros((self.data.shape[0]-timeWindow,timeWindow))
+        y=np.zeros((X2.shape[0],1))
+        
+        for i in range(y.shape[0]):
+            X2[i,:]=self.data['Open'][i:i+timeWindow]
+            if method=='regression':
+                y[i]=self.data['Open'][i+timeWindow]
+            if method=='classification':
+                y[i]=self.data['High'][i+timeWindow]/self.data['Open'][i+timeWindow-1]
+                
+                
+        return np.flip(X2,axis=0),np.flip(y,axis=0)
+        
+    def getCloseData(self):
+        return np.flip(self.data['Open'].values)
+    
+asl=AselsanData()
+X2,y=asl.TimeSeriesData(method='classification',timeWindow = 30)
