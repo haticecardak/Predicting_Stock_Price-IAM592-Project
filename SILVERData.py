@@ -1,7 +1,6 @@
 import numpy as np 
 import pandas as pd
 
-
 X=pd.read_csv('../data/SILVER_Histdata.csv')
 
 class SilverData():
