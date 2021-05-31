@@ -1,6 +1,5 @@
 import numpy as np 
 import pandas as pd
-import os
 
 X2=pd.read_csv('../dataset/ASELS_Histdata.csv')
 
