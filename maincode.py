@@ -7,15 +7,20 @@ from matplotlib.figure import Figure, figaspect
 from ASELSAN import ASELSANDataset
 from SILVERData import SilverData
 from GoldDataset import GoldDataset
+from NFLXData import NetFlixData
 
 asl=ASELSANDataset()
 si=SilverData()
 gd=GoldDataset()
+nflx=NetFlixData()
+data={'Gold':gd, 'Aselsan': asl, 'Silver':si, 'NetFlix': nflx}
 
-data={'Gold':gd, 'Aselsan': asl, 'Silver':si}
+for key in data.keys():
+    print('Key : {} , Samples : {}'.format(key,data[key].data.shape[0]))
+
 
 #--Linear Regression 
  
    for key in data.keys():
         
-        X,y = data[key].prepareTimeSeriesData(method='regression',timeWindow=30)
+        X,y = data[key].prepareTimeSeriesData(model='regression',time=30)
