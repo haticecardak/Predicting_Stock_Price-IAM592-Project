@@ -15,6 +15,12 @@ gd=GoldDataset()
 nflx=NetFlixData()
 data={'Gold':gd, 'Aselsan': asl, 'Silver':si, 'NetFlix': nflx}
 
+ Xtrain=X[:testInd,:]
+ xtest=X[testInd:,:]
+ Ytrain=y[:testInd,:]
+ ytest=y[testInd:,:]
+
+
 for key in data.keys():
     print('Key : {} , Samples : {}'.format(key,data[key].data.shape[0]))
 
