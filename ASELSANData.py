@@ -20,7 +20,7 @@ class AselsanData():
         
         for i in range(y.shape[0]):
             X2[i,:]=self.data['Open'][i:i+time] # open price is considered 
-            if method=='regression':
+            if model=='regression':
                 y[i]=self.data['Open'][i+time] 
               
 asl=AselsanData()
