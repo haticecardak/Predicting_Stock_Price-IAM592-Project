@@ -9,18 +9,15 @@ class SilverData():
         self.data=pd.read_csv(self.folderName)
         self.columns=self.data.columns
   
-    def prepareTimeSeriesData(self,method='regression',timeWindow=30):
+    def prepareTimeSeriesData(self,model='regression',time=30):
         # a=
-        X=np.zeros((self.data.shape[0]-timeWindow,timeWindow))
+        X=np.zeros((self.data.shape[0]-time,time))
         y=np.zeros((X.shape[0],1))
         
         for i in range(y.shape[0]):
-            X[i,:]=self.data['Open'][i:i+timeWindow]
+            X[i,:]=self.data['Open'][i:i+time]
             if method=='regression':
-                y[i]=self.data['Open'][i+timeWindow]
-            if method=='classification':
-                y[i]=self.data['High'][i+timeWindow]/self.data['Open'][i+timeWindow-1]
-                
+                y[i]=self.data['Open'][i+time]
                 
         return np.flip(X,axis=0),np.flip(y,axis=0)
         
@@ -29,4 +26,4 @@ class SilverData():
      
 si=SilverData()
 
-X,y=si.prepareTimeSeriesData(method='classification',timeWindow = 30)
+X,y=si.prepareTimeSeriesData(model='regression',time = 30)
