@@ -1,7 +1,6 @@
 
 import numpy as np 
 import pandas as pd
-import os
 
 X=pd.read_csv('../dataset/NFLX_Histdata.csv')
 
