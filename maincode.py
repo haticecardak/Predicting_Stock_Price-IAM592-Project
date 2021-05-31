@@ -15,10 +15,10 @@ gd=GoldDataset()
 nflx=NetFlixData()
 data={'Gold':gd, 'Aselsan': asl, 'Silver':si, 'NetFlix': nflx}
 
- Xtrain=X[:testInd,:]
- xtest=X[testInd:,:]
- Ytrain=y[:testInd,:]
- ytest=y[testInd:,:]
+ train_x=X[:testInd,:]
+ train_y=y[:testInd,:]
+ test_x=X[testInd:,:]
+ test_y=y[testInd:,:]
 
 
 for key in data.keys():
