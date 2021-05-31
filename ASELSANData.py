@@ -10,7 +10,7 @@ class AselsanData():
         self.data=pd.read_csv(self.folderName)
         self.columns=self.data.columns
      
-    def TimeSeriesData(self,model='regression',time=60):
+    def TimeSeriesData(self,model='regression',time=30):
     
     # 60 days historical data used to estimate 61th day price 
     # 30 days also will be checked the change in price 
@@ -24,4 +24,4 @@ class AselsanData():
                 y[i]=self.data['Open'][i+time] 
               
 asl=AselsanData()
-X2,y=asl.TimeSeriesData(model='regression',time = 60)
+X2,y=asl.TimeSeriesData(model='regression',time = 30)
