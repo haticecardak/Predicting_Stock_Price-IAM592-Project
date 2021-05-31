@@ -8,7 +8,7 @@ class GoldDataset():
     def __init__(self):
         
         self.folderName='../dataset/Gold Futures Historical Data.csv'
-        self.data=pd.read_csv(folderName)
+        self.data=pd.read_csv(self.folderName)
         self.columns=self.data.columns
         
     def prepareTimeSeriesData(self,model='regression',time=30):
