@@ -13,7 +13,7 @@ class AselsanData():
     def TimeSeriesData(self,model='regression',time=30):
     
     # 60 days historical data used to estimate 61th day price 
-    # 30 days also will be checked the change in price 
+    # 30 days historical data used to estimate 31th day price 
     
         X2=np.zeros((self.data.shape[0]-time,time))
         y=np.zeros((X2.shape[0],1))
