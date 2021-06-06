@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 
 X2=pd.read_csv('../dataset/ASELS_Histdata.csv')
+X2.columns = ["Tarih","Şimdi","Açılış","Yüksek","Düşük","Hacim", "Fark %"] #coloumn headings
+X2.head() #shown first and last 5 data
 
 class AselsanData():
 
