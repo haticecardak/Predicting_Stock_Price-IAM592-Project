@@ -7,10 +7,10 @@ Also, I research the method that is used to estimate stock price, I found the Re
 
 Data Set Description:
 
-I used different assets from the stock market and also I included silver and gold prices. 
+I used different assets from the stock market and also included silver and gold prices. I prepare dataset for querying all data in a same way.
 
 1- Stock Market Data Set 
-I have downloaded historical data set from the yahoo finance. First stock is ASELSAN from the Borsa Istanbul and the other is NetFlix from the NASDAQ.
+I have downloaded historical data (daily based 5Y) set from the yahoo finance. First stock is ASELSAN from the Borsa Istanbul and the other is NetFlix from the NASDAQ.
 
 2- Gold and Silver Data Set
-I have dowloaded daily basis historical data from investing.com website. 
+I have dowloaded daily basis historical data(daily based 5Y) from investing.com website. 
