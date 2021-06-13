@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import time
 import numpy as np
-import time
+import pandas as pd
+
 from matplotlib.figure import Figure, figaspect
 
 from ASELSAN import ASELSANDataset
@@ -10,10 +11,10 @@ from GoldDataset import GoldDataset
 from NFLXData import NetFlixData
 
 aselsan=ASELSANDataset()
-si=SilverData()
-gd=GoldDataset()
-nflx=NetFlixData()
-data={'Gold':gd, 'Aselsan': aselsan, 'Silver':si, 'NetFlix': nflx}
+silver=SilverData()
+golden=GoldDataset()
+netflix=NetFlixData()
+data={'Gold':golden, 'Aselsan': aselsan, 'Silver':silver, 'NetFlix': netflix}
 
 def splitDataset(X,y,ratio=0.9): # ratio=0.9 the set of data %90: train , %10 test
     test=np.floor(X.shape[0]*ratio).astype('int')
