@@ -1,7 +1,7 @@
 import numpy as np 
 import pandas as pd
 
-X=pd.read_csv('../dataset/Gold Futures Historical Data.csv')
+X=pd.read_csv('../data/Gold Futures Historical Data.csv')
 
 class GoldDataset():
     
