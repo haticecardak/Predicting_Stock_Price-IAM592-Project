@@ -3,6 +3,10 @@ import numpy as np
 import pandas as pd
 
 X=pd.read_csv('../dataset/NFLX_Histdata.csv')
+X=pd.read_csv('../data/NFLX_Histdata.csv' )
+X.columns = ["Date","Open","High","Low","Close","Adj Close","Volume"]
+X.head()
+print(X)
 
 class NetFlixData():
     def __init__(self):
