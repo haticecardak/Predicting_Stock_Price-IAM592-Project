@@ -1,9 +1,9 @@
 import numpy as np
 
 class Agent():
-  def __init__(self,gamma=0.90,eps=0.1):
-       self.gamma=gamma
-       self.eps=eps
+  def __init__(self,gamma=0.90,epsilon=0.1):
+       self.gamma=gamma #with respect to rsi value, getting the how much reward i won and multiply the reward value with gamma then adding the result Q-table
+       self.epsilon=epsilon # new decision reward multiplication rate 
        self.actions = ['buy', 'hold', 'sell']
        self.asset='cash'
        self.Qtable = np.zeros((10,len(self.actions)))
