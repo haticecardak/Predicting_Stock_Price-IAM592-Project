@@ -36,8 +36,8 @@ for key in data.keys():
 
 #--Linear Regression 
   
-  lrOLS=LinearRegression(standardize=True,method='OLS',lam=0)
-  lrRidge=LinearRegression(standardize=True,method='Ridge',lam=10)
+  lrOLS=LinearReg(standardize=True,method='OLS',lam=0)
+  lrRidge=LinearReg(standardize=True,method='Ridge',lam=10)
   
     for key in data.keys():
         
