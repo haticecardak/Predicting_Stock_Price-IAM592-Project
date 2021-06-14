@@ -24,6 +24,9 @@ def splitDataset(X,y,ratio=0.9): # ratio=0.9 the set of data %90: train , %10 te
     ytrain=y[:test,:]
     ytest=y[test:,:]
     return xtrain,ytrain,xtest,ytest
+def calculateLoss(y,ypred):
+    return np.mean((ypred-y)**2)
+
 #--------------------
 
 
