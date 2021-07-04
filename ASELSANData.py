@@ -41,10 +41,10 @@ class ASELSANDataset():
             X[i,:]=self.data['Open'][i:i+time]
             
             if method=='regression':
-                y[i]=self.data['Open'][i+time]
+                y[i]=self.data['Open'][i+time] # To forecast 31st price by using 30 day price 
                 
             if method=='classification':
-                y[i]=self.data['High'][i+time]/self.data['Open'][i+time-1] 
+                y[i]=self.data['High'][i+time]/self.data['Open'][i+time-1] #looking at 1.01 rise in prices 
                 
         # reverse order the data set to be shown as descending day            
         return np.flip(X,axis=0),np.flip(y,axis=0)
