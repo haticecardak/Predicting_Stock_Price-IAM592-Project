@@ -1,4 +1,7 @@
-          Date    Open    High     Low   Close  Adj Close    Volume
+        
+      #Reading data from csv file 
+      # First and last 5 data are shown below
+        Date    Open    High     Low   Close  Adj Close    Volume
 0     2016-06-14   4.705   4.710   4.550   4.590   4.453227   2862848
 1     2016-06-15   4.600   4.655   4.585   4.610   4.472632   2108200
 2     2016-06-16   4.605   4.610   4.510   4.530   4.395016   1331068
