@@ -35,7 +35,11 @@ As for RL, I researched the method that is used to estimate stock price. I found
   In this project, values [State, Action] initialized to zero and then update and store q-values after an episode. 
   Q-table can be seen as a reference point for our agent to select the best way. 
   
+  # Linear Regression
   
+  Ridge Regression 
+  
+  Ordinary Least Square
  
  
 
