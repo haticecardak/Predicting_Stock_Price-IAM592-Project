@@ -70,4 +70,42 @@ for key in data.keys():
         plt.title('{} Test Data Ridge Estimation'.format(key))
         plt.savefig('../images/{} Ridge Estimation '.format(key))
         plt.show()
+#------------RLAgentEnv----------------
+from RLAgentEnv import *
 
+for key in data.keys():
+    price=data[key].getCloseData()
+    rlEnv=Env(price)
+    
+        rlAgent=RLAgent()
+    numEpisode=1000
+    rewards=np.zeros((numEpisode,price.shape[0]))
+    for episode in range(numEpisode):
+        if (1+episode)%100==0:
+            print('{} Episode {} Completed'.format(key,episode+1))
+        rlAgent.resetStates()
+        rlAgent.setEps(np.maximum(0.5/(1+episode),0.001))#epsilon update
+        for timeInd in range(price.shape[0]):
+        # for timeInd in range(100):
+        info=rlEnv.getInfo(timeInd)
+            # print(info)
+            # print(rlAgent.asset)
+            asset=rlAgent.asset
+            action=rlAgent.getAction(info)
+            # print(action)
+            # print(rlAgent.asset)
+            bp=rlAgent.getBoughtPrice()
+            # print(bp)
+            reward=rlEnv.getReward(timeInd,action,bp,asset)
+            rewards[episode,timeInd] = reward
+            rlAgent.updateQtable(action,info,reward)
+            if action=='sell':
+                 # print('Sell Reward : {:.3f}'.format(reward))
+                 
+    # print('{} Q Table'.format(key))
+    print(rlAgent.Qtable) 
+    
+    plt.figure()
+    plt.plot(np.sum(rewards,axis=1))
+    plt.title('{} Rewards Per Episode'.format(key))
+    plt.show(block=False)
