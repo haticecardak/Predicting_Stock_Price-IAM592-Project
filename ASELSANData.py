@@ -20,11 +20,12 @@ class ASELSANDataset():
         Input Arguments:
         Time: 30
         Method: Regression and Classification
-            
+        X= Feature Matrix
+        y=target Matrix 
+        
+        Methods:
         Regression method aims to predict 31st day data with respect to 30 days data 
-        
         ***********
-        
         Classification method aims to predict 31st day price that will be %1 higher than previous day Open Price
         this method takes into consideration with respect to 31st day High price over the 30rd day Open price.
         If the price is higher than previous day price by 1.01, buying stock will be good decision.         
