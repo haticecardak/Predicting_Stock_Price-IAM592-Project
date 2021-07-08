@@ -62,7 +62,7 @@ I have dowloaded daily basis historical data(daily based 5Y) from investing.com 
  
         Date    Open    High     Low   Close  Adj Close    Volume
         
- 0     2016-06-14   4.705   4.710   4.550   4.590   4.453227   2862848
+   0     2016-06-14   4.705   4.710   4.550   4.590   4.453227   2862848
  
  1     2016-06-15   4.600   4.655   4.585   4.610   4.472632   2108200
  
