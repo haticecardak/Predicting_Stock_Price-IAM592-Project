@@ -2,7 +2,8 @@
 
 I would like to study stock price estimation on the financial market. My project consists of 3 parts that are Dataset, Linear Regression and Reinforcement Learning (RL) Environment.
 ## Data Set
-Firstly, I prepare a timeseries data with respect to looking at the historical data, which enables me to query all dataset in a same way. Data set information is stated "Data Set Description". 
+Firstly, I prepare a timeseries data with respect to looking at the historical data, which enables me to query all dataset in a same way. Data set information and sample results are stated "Data Set Description". 
+My data set is composed of 4 financial market instruments that are ASELSAN, NETFLİX, Gold and Silver. 
 
 ## Linear Regression 
 Secondly, Linear Regression focuses on two variables that are dependent and independent. Dependent variable implies the target and the independent variable implies feature. I would like to estimate the price of stock in financial market with the daily data and then make a restriction such as 30 days, 60 days and etc., which enables to forecast future price movement up or down. It can be seen as a signal. 
@@ -151,6 +152,6 @@ I have dowloaded daily basis historical data(daily based 5Y) from investing.com 
    
     RSI : [50.         50.         50.         ... 54.23211169 41.11394558   38.06506126]
 
-  ![image](https://user-images.githubusercontent.com/78654515/124862601-5e12c200-dfbe-11eb-8e9c-27b1009c44d1.png)
+  ![image](https://user-images.githubusercontent.com/78654515/124975503-c2716800-e036-11eb-9e35-38514d5cbc5e.png)
 
 First part of the image open prices are taken into consideration and the second part RSI index significant levels are taken into consideration.
