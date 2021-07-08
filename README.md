@@ -126,7 +126,7 @@ I have dowloaded daily basis historical data(daily based 5Y) from investing.com 
  
  # Data Set Sample Result -Gold:
  
-               Date     Price      Open      High       Low      Vol Change %
+               Date     Price      Open      High       Low        Vol    Change %
     
     0     Jun 14, 2021  1,868.60  1,875.60  1,875.85  1,846.20        -   -0.37%
     
