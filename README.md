@@ -3,11 +3,11 @@
    I would like to study stock price estimation on the financial market. My project consists of 3 parts that are Dataset, Linear Regression and Reinforcement Learning (RL) Environment.
    
 ## Data Set
-   Firstly, I prepare a timeseries data with respect to looking at the historical data, which enables me to query all dataset in a same way. Data set information and sample results are stated below "Data Set Description". 
-   My data set is composed of 4 financial market instruments that are ASELSAN, NETFLİX, Gold and Silver. I really wonder about the Gold and Silver price movement also adding two company stocks in order to analyze their predicting stock prices. In my data set file,  I prepared timeseries with using regression and classification method. 
+      Firstly, I prepare a timeseries data with respect to looking at the historical data, which enables me to query all dataset in a same way. Data set information and sample results are stated below "Data Set Description". 
+      My data set is composed of 4 financial market instruments that are ASELSAN, NETFLİX, Gold and Silver. I really wonder about the Gold and Silver price movement also adding two company stocks in order to analyze their predicting stock prices. In my data set file,  I prepared timeseries with using regression and classification method. 
 
-   In the regression task, feature matrix  is formed by using first 30 day close price of the stock and this feature try yo estimate the 31st day Close Price that is called target. For instance, from 1st day to 30rd day Close Prices are called feature matrix  , and 31st day Close Price is called target.
-   In the classification task,  feature matrix  is formed by using first 30 day close price of the stock that is the same as regression feature matrix, but target plays a deterministic role
+      In the regression task, feature matrix  is formed by using first 30 day close price of the stock and this feature try yo estimate the 31st day Close Price that is called target. For instance, from 1st day to 30rd day Close Prices are called feature matrix  , and 31st day Close Price is called target.
+      In the classification task,  feature matrix  is formed by using first 30 day close price of the stock that is the same as regression feature matrix, but target plays a deterministic role
 
 ## Linear Regression 
 Secondly, Linear Regression focuses on two variables that are dependent and independent. Dependent variable implies the target and the independent variable implies feature. I would like to estimate the price of stock in financial market with the daily data and then make a restriction such as 30 days, 60 days and etc., which enables to forecast future price movement up or down. It can be seen as a signal. 
