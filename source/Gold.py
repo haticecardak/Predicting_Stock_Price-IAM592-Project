@@ -81,16 +81,14 @@ price=gold.getCloseData()
 print('RSI :', rsiGold)
 
 
-
-
 # plot correspondingRSI values and significant levels
-plt.figure(figsize=(15,5))
-plt.title('RSI')
-ax1=plt.subplot(211)
+plt.figure(figsize=(16,6))
+ax1=plt.subplot(211)#produces subaxes command
+ax1.set_title('Prices')
 ax1.plot(goldPrice)
 ax2=plt.subplot(212,sharex=ax1)
+ax2.set_title('RSI')
 ax2.plot(rsiGold)
-
 
 plt.axhline(0, linestyle='--', alpha=0.1)
 plt.axhline(20, linestyle='--', alpha=0.5)
