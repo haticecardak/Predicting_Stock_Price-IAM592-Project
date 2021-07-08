@@ -55,6 +55,11 @@
       2- Gold and Silver Data Set
       I have dowloaded daily basis historical data(daily based 5Y) from investing.com website. 
       -------------------
+# Number of Data set samples: 
+      Key : Aselsan , Samples : 1288
+      Key : NetFlix , Samples : 1258
+      Key : Silver , Samples : 1583
+      Key : Gold , Samples : 1346
 
  # Data Set Stock Result Sample- Aselsan: 
  
