@@ -53,7 +53,7 @@ for key in data.keys():
 #%% Linear Regression
 
 if True:
-        lrOLS=LinearReg(standardize=True,method='OLS',lam=0)
+    lrOLS=LinearReg(standardize=True,method='OLS',lam=0)
     lrRidge=LinearReg(standardize=True,method='Ridge',lam=10) # lambda is defined as a 10 for testing the code 
     
     for key in data.keys(gold):
