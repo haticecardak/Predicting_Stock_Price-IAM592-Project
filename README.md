@@ -60,12 +60,12 @@ I have dowloaded daily basis historical data(daily based 5Y) from investing.com 
 
  # Data Set Stock Result Sample- Aselsan: 
  
-       Date    Open    High     Low   Close  Adj Close    Volume
-0     2016-06-14   4.705   4.710   4.550   4.590   4.453227   2862848
-1     2016-06-15   4.600   4.655   4.585   4.610   4.472632   2108200
-2     2016-06-16   4.605   4.610   4.510   4.530   4.395016   1331068
-3     2016-06-17   4.535   4.590   4.535   4.575   4.438675   1211294
-4     2016-06-20   4.610   4.775   4.610   4.760   4.618162   3244210
+        Date    Open    High     Low   Close  Adj Close    Volume
+ 0     2016-06-14   4.705   4.710   4.550   4.590   4.453227   2862848
+ 1     2016-06-15   4.600   4.655   4.585   4.610   4.472632   2108200
+ 2     2016-06-16   4.605   4.610   4.510   4.530   4.395016   1331068
+ 3     2016-06-17   4.535   4.590   4.535   4.575   4.438675   1211294
+ 4     2016-06-20   4.610   4.775   4.610   4.760   4.618162   3244210
          ...     ...     ...     ...     ...        ...       ...
 1283  2021-06-07  15.150  15.580  15.140  15.460  15.460000  34057364
 1284  2021-06-08  15.470  15.520  15.320  15.430  15.430000  20037369
@@ -131,4 +131,5 @@ Open Prices:
 RSI : [50.         50.         50.         ... 54.23211169 41.11394558   38.06506126]
 
 ![image](https://user-images.githubusercontent.com/78654515/124862601-5e12c200-dfbe-11eb-8e9c-27b1009c44d1.png)
+
 First part of the image open prices are taken into consideration and the second part RSI index significant levels are taken into consideration.
