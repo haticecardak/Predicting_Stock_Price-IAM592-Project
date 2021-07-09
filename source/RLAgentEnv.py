@@ -4,7 +4,7 @@ import numpy as np
 class RLAgent():
     
     def __init__(self,gamma=0.95,eps=0.1): #agent tablo tutar Q-table
-    #RSI şu kadarken ne kadar ödül aldım tutuyor eski değeri 0.95 ile çarpır reward ekler
+    #RSI şu kadarken ne kadar ödül aldım tutuyor eski değeri 0.95 ile çarpıp reward ekler
        #Q-table update eden bir gama değeri var
        # epsilon yeni karar alma 0.1 exploration or explanation 
         self.gamma=gamma
