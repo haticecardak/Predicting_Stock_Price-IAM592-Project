@@ -22,10 +22,6 @@ class RLAgent():
     
     def setEps(self,eps2):
         self.eps=eps2
-        
- 
-  
-    
     
     def getAction(self,info): #info enviromenttn gelen bilgi price ve rsi değeri 
         
@@ -40,15 +36,13 @@ class RLAgent():
                     self.asset='stock'
                     self.bought_price=p
                     self.boughtRSIind=stateInd
-                    # print('Buy Order Price : {:.4f}'.format(p))
-                # print('Random Selection : {}'.format(action))
+                   
                 return action
             else:
                 action = self.actions[np.random.randint(1,3)]
                 if action=='sell':
                     self.asset='cash'
-                    # print('Sell Order Price : {:.4f}'.format(p))
-                # print('Random Selection : {}'.format(action))
+                   
                 return action
         else:
             if self.asset=='cash':
@@ -58,13 +52,13 @@ class RLAgent():
                     self.asset='stock'
                     self.bought_price=p
                     self.boughtRSIind=stateInd
-                    # print('Buy Order Price : {:.4f}'.format(p))
+                   
                 return action
             else:
                 action = self.actions[1+np.argmax(self.Qtable[stateInd,1:3])]
                 if action=='sell':
                     self.asset='cash'
-                    # print('Sell Order Price : {:.4f}'.format(p))
+                   
                 return action
     
     def getBoughtPrice(self):
@@ -96,16 +90,13 @@ class Env():
         self.price=price
         self.rsi=self.calculateRSI(self.price,14)   # calculate the RSI with respect to 14 days      
         
-
-        
     def getInfo(self,time):
         
         return self.price[time],self.rsi[time]
     
     
     def calculateRSI(self,x,n):
-          
-        
+                
         rsi=50*np.ones(x.shape)
         for i in range(n):
            diff=np.diff(x[i-n-1:i])
