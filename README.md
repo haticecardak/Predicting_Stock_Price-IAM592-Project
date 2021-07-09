@@ -37,10 +37,12 @@
     The learner or decision maker is called agent. The thing it interacts with comprising everything outside the agent is called environment in this project stock price results.
     These interact continuously, the agent select the actions and environment responds the action result and present the new case for the agent. Environment gives the reward of the action that is a special numerical value multipling with gamma and agent tries to maximize this value over time. 
     
-    In this project our actions buy, sell and hold. When agent will select the actions that depend on the information such as dataset result and the next step is following by a reward can be given by the environment. In the state of the datasets, Relative Strength Index (RSI) indicator being used for technical analysis in the financial market is also used to make decision about the action. RSI takes into consideration 14 day price movement. It calculates the 14 day average of upward price and average of the downward price and then dividing the upward result and downward result.  After the calculation it makes sense about the taking actions. RSI value range is [0,100]. According to RSI, if the value is less than 30 the action would be buy and if the value is higher than 70 the action would be sell. In this case this rule is not used entirely because agent will give a decision 
+    In this project our actions buy, sell and hold. When agent will select the actions that depend on the information such as dataset result and the next step is following by a reward can be given by the environment. In the state of the datasets, Relative Strength Index (RSI) indicator being used for technical analysis in the financial market is also used to make decision about the action. RSI takes into consideration 14 day price movement. It calculates the 14 day average of upward price and average of the downward price and then dividing the upward result and downward result.  After the calculation it makes sense about the taking actions. RSI value range is [0,100]. According to RSI, if the value is less than 30 the action would be buy and if the value is higher than 70 the action would be sell. In this case this rule is not used entirely because agent will give a decision based on reward signal.
+    
     
   ### Q-Table  
   
+    
      Q-Learning seeks to find best action to take given current state. Q stands for the Quality and also it seeks to learn a policy maximizing the reward.
      At begining, Q-table or it can be called as matrix is initiliazed to zero. When the state is done, then the Q-table would be updated. 
      The updates occur after each step or action and ends when state is done. The agent will not learn much after a single step. 
