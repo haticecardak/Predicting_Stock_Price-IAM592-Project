@@ -38,6 +38,7 @@
     The learner or decision maker is called agent.     
    
       policy: it stands for the learning agent's way of behaving at a given time.
+      
       reward signal: it stands for the RL. Each step of the environment sends a single number that can be accepted as a reward. 
     This signal defines what are the good and bad events for the agent.
     
