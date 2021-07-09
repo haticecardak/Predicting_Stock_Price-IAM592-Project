@@ -37,13 +37,303 @@
   ### Q-Table  
   
      Q-Learning seeks to find best action to take given current state. Q stands for the Quality.
-     In this project, values [State, Action] initialized to zero and then update and store q-values after an episode. 
+     In this project, values [State, Action] initialized to zero and then update and store q-values after an state that is set 100 action. The sample run is stated below belongs to GoldDataSet and it shows us selling case profit with respect to state period. After the period result, Q-table is updated. 
      Q-table can be seen as a reference point for our agent to select the best way. 
   
+![image](https://user-images.githubusercontent.com/78654515/125017686-5154a380-e07c-11eb-94ed-ba3577ed931a.png)
+      ![image](https://user-images.githubusercontent.com/78654515/125017732-6b8e8180-e07c-11eb-90b9-7a71275d9bc4.png)
 
- 
- 
- 
+     
+         Gold State 800 Completed
+         Sell Reward : -0.002
+         Sell Reward : -0.000
+         Sell Reward : 0.003
+         Sell Reward : 0.002
+         Sell Reward : -0.002
+         Sell Reward : -0.003
+         Sell Reward : 0.000
+         Sell Reward : 0.010
+         Sell Reward : -0.005
+         Sell Reward : -0.005
+         Sell Reward : -0.009
+         Sell Reward : 0.368
+         Sell Reward : -0.019
+         Sell Reward : -0.013
+         Sell Reward : 0.005
+         Sell Reward : -0.006
+         Sell Reward : -0.005
+         Sell Reward : 0.005
+         Sell Reward : 0.002
+         Sell Reward : 0.023
+         Sell Reward : -0.010
+         Sell Reward : 0.005
+         Sell Reward : 0.009
+         Sell Reward : 0.007
+         Sell Reward : -0.018
+         Sell Reward : -0.023
+         Sell Reward : 0.011
+         Sell Reward : 0.002
+         Sell Reward : -0.000
+         Sell Reward : -0.015
+         Sell Reward : -0.025
+         Sell Reward : -0.004
+         Sell Reward : 0.003
+         Sell Reward : -0.061
+         Sell Reward : -0.002
+         Sell Reward : 0.007
+         Sell Reward : 0.001
+         Sell Reward : -0.003
+         Sell Reward : -0.001
+         Sell Reward : -0.001
+         Sell Reward : -0.014
+         Sell Reward : 0.027
+         Sell Reward : 0.002
+         Sell Reward : -0.011
+         Sell Reward : -0.005
+         Sell Reward : -0.002
+         Sell Reward : 0.004
+         Sell Reward : 0.001
+         Sell Reward : 0.007
+         Sell Reward : -0.047
+         Sell Reward : 0.028
+         Sell Reward : -0.010
+         Sell Reward : 0.033
+         Sell Reward : -0.000
+         Sell Reward : 0.021
+         Sell Reward : 0.003
+         Sell Reward : 0.002
+         Sell Reward : 0.001
+         Sell Reward : 0.000
+         Sell Reward : -0.007
+         Sell Reward : 0.002
+         Sell Reward : -0.007
+         Sell Reward : 0.003
+         Sell Reward : 0.015
+         Sell Reward : 0.007
+         Sell Reward : 0.062
+         Sell Reward : -0.008
+         Sell Reward : 0.004
+         Sell Reward : -0.007
+         Sell Reward : 0.001
+         Sell Reward : -0.009
+         Sell Reward : -0.006
+         Sell Reward : -0.001
+         Sell Reward : -0.008
+         Sell Reward : 0.004
+         Sell Reward : 0.002
+         Sell Reward : 0.017
+         Sell Reward : 0.001
+         Sell Reward : -0.004
+         Sell Reward : 0.003
+         Sell Reward : -0.057
+         Sell Reward : -0.014
+         Sell Reward : 0.351
+         Sell Reward : 0.002
+         Sell Reward : 0.006
+         Sell Reward : -0.001
+         Sell Reward : 0.004
+         Sell Reward : 0.009
+         Sell Reward : -0.004
+         Sell Reward : -0.005
+         Sell Reward : -0.006
+         Sell Reward : 0.003
+         Sell Reward : 0.001
+         Sell Reward : 0.007
+         Sell Reward : -0.001
+         Sell Reward : 0.002
+         Sell Reward : -0.013
+         Sell Reward : 0.000
+         Sell Reward : -0.017
+         Sell Reward : 0.006
+         Sell Reward : 0.009
+         Sell Reward : 0.027
+         Sell Reward : -0.050
+         Sell Reward : -0.008
+         Sell Reward : -0.003
+         Sell Reward : 0.001
+         Sell Reward : -0.003
+         Sell Reward : -0.005
+         Sell Reward : 0.004
+         Sell Reward : 0.002
+         Sell Reward : 0.023
+         Sell Reward : -0.000
+         Sell Reward : 0.008
+         Sell Reward : 0.008
+         Sell Reward : -0.000
+         Sell Reward : -0.002
+         Sell Reward : -0.015
+         Sell Reward : 0.016
+         Sell Reward : 0.007
+         Sell Reward : -0.003
+         Sell Reward : 0.007
+         Sell Reward : -0.003
+         Sell Reward : 0.001
+         Sell Reward : -0.003
+         Sell Reward : -0.019
+         Sell Reward : 0.004
+         Sell Reward : 0.002
+         Gold State 900 Completed
+         Sell Reward : 0.005
+         Sell Reward : -0.017
+         Sell Reward : -0.002
+         Sell Reward : 0.034
+         Sell Reward : 0.005
+         Sell Reward : 0.016
+         Sell Reward : -0.005
+         Sell Reward : -0.048
+         Sell Reward : 0.003
+         Sell Reward : -0.010
+         Sell Reward : 0.218
+         Sell Reward : 0.034
+         Sell Reward : 0.011
+         Sell Reward : -0.009
+         Sell Reward : 0.003
+         Sell Reward : -0.004
+         Sell Reward : -0.002
+         Sell Reward : -0.029
+         Sell Reward : 0.025
+         Sell Reward : 0.005
+         Sell Reward : 0.003
+         Sell Reward : 0.001
+         Sell Reward : -0.001
+         Sell Reward : -0.016
+         Sell Reward : 0.005
+         Sell Reward : 0.003
+         Sell Reward : 0.001
+         Sell Reward : 0.004
+         Sell Reward : 0.001
+         Sell Reward : 0.005
+         Sell Reward : 0.017
+         Sell Reward : -0.016
+         Sell Reward : -0.001
+         Sell Reward : 0.015
+         Sell Reward : -0.002
+         Sell Reward : 0.001
+         Sell Reward : -0.009
+         Sell Reward : -0.031
+         Sell Reward : 0.005
+         Sell Reward : 0.011
+         Sell Reward : 0.000
+         Sell Reward : -0.008
+         Sell Reward : -0.007
+         Sell Reward : 0.006
+         Sell Reward : -0.000
+         Sell Reward : -0.000
+         Sell Reward : 0.001
+         Sell Reward : -0.001
+         Sell Reward : -0.007
+         Sell Reward : -0.001
+         Sell Reward : -0.003
+         Sell Reward : -0.002
+         Sell Reward : 0.001
+         Sell Reward : -0.000
+         Sell Reward : 0.004
+         Sell Reward : -0.001
+         Sell Reward : 0.008
+         Sell Reward : -0.008
+         Sell Reward : -0.007
+         Sell Reward : 0.002
+         Sell Reward : -0.002
+         Sell Reward : -0.022
+         Sell Reward : 0.381
+         Sell Reward : 0.004
+         Sell Reward : 0.002
+         Sell Reward : 0.003
+         Sell Reward : 0.010
+         Sell Reward : -0.002
+         Sell Reward : 0.000
+         Sell Reward : -0.002
+         Sell Reward : 0.002
+         Sell Reward : -0.014
+         Sell Reward : -0.001
+         Sell Reward : -0.004
+         Sell Reward : -0.005
+         Sell Reward : 0.047
+         Sell Reward : -0.002
+         Sell Reward : 0.004
+         Sell Reward : 0.012
+         Sell Reward : 0.002
+         Sell Reward : -0.002
+         Sell Reward : 0.008
+         Sell Reward : 0.001
+         Sell Reward : -0.002
+         Sell Reward : 0.045
+         Sell Reward : -0.005
+         Sell Reward : -0.005
+         Sell Reward : -0.035
+         Sell Reward : 0.046
+         Sell Reward : -0.005
+         Sell Reward : -0.000
+         Sell Reward : 0.006
+         Sell Reward : -0.003
+         Sell Reward : 0.005
+         Sell Reward : 0.009
+         Sell Reward : -0.003
+         Sell Reward : 0.007
+         Sell Reward : 0.012
+         Sell Reward : 0.009
+         Sell Reward : 0.003
+         Sell Reward : -0.002
+         Sell Reward : 0.004
+         Sell Reward : -0.005
+         Sell Reward : 0.006
+         Sell Reward : 0.006
+         Sell Reward : -0.002
+         Sell Reward : -0.012
+         Sell Reward : -0.001
+         Sell Reward : -0.007
+         Sell Reward : -0.001
+         Sell Reward : 0.006
+         Sell Reward : -0.003
+         Sell Reward : 0.003
+         Sell Reward : 0.051
+         Sell Reward : 0.018
+         Sell Reward : -0.007
+         Sell Reward : -0.003
+         Sell Reward : 0.005
+         Sell Reward : -0.006
+         Sell Reward : 0.041
+         Sell Reward : 0.014
+         Sell Reward : -0.014
+         Sell Reward : -0.019
+         Sell Reward : -0.013
+         Sell Reward : 0.005
+         Sell Reward : -0.006
+         Sell Reward : -0.005
+         Sell Reward : 0.000
+         Sell Reward : 0.000
+         Sell Reward : 0.002
+         Sell Reward : 0.010
+         Sell Reward : 0.005
+         Sell Reward : -0.001
+         Sell Reward : -0.003
+         Sell Reward : -0.010
+         Sell Reward : 0.002
+         Sell Reward : -0.006
+         Sell Reward : 0.003
+         Sell Reward : -0.004
+         Sell Reward : 0.011
+         Sell Reward : 0.007
+         Sell Reward : -0.003
+         Sell Reward : -0.056
+         Sell Reward : 0.047
+         Sell Reward : -0.010
+         Sell Reward : -0.005
+         Gold State 1000 Completed
+         Gold Q Table
+         [[ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]
+          [-0.01623284  0.          0.0062734 ]
+          [ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]
+          [ 0.          0.          0.        ]]
+
+
+
 
 # Data Set Description:
 
