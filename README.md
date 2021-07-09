@@ -41,8 +41,7 @@
      Q-table can be seen as a reference point for our agent to select the best way. 
   
 ![image](https://user-images.githubusercontent.com/78654515/125017686-5154a380-e07c-11eb-94ed-ba3577ed931a.png)
-      ![image](https://user-images.githubusercontent.com/78654515/125017732-6b8e8180-e07c-11eb-90b9-7a71275d9bc4.png)
-
+    
      
          Gold State 800 Completed
          Sell Reward : -0.002
