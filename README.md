@@ -4,10 +4,14 @@
    
 ## Data Set
       Firstly, I prepare a timeseries data with respect to looking at the historical data, which enables me to query all dataset in a same way. Data set information and sample results are stated below "Data Set Description". 
-      My data set is composed of 4 financial market instruments that are ASELSAN, NETFLİX, Gold and Silver. I really wonder about the Gold and Silver price movement also adding two company stocks in order to analyze their predicting stock prices. In my data set file,  I prepared timeseries with using regression and classification method. 
+      My data set is composed of 4 financial market instruments that are ASELSAN, NETFLİX, Gold and Silver.
+      I really wonder about the Gold and Silver price movement also adding two company stocks in order to analyze their predicting stock prices. 
+      In my data set file,  I prepared timeseries with using regression and classification method. 
 
-      In the regression task, feature matrix  is formed by using first 30 day close price of the stock and this feature try yo estimate the 31st day Close Price that is called target. For instance, from 1st day to 30rd day Close Prices are called feature matrix, and 31st day Close Price is called target.
-      In the classification task,  feature matrix  is formed by using first 30 day close price of the stock that is the same as regression feature matrix, but target plays a deterministic role. Target matrix is considering raito of 31 st day high price  and  30 rd day close price. 
+      In the regression task, feature matrix  is formed by using first 30 day close price of the stock and this feature try yo estimate the 31st day Close Price that is called target. 
+      For instance, from 1st day to 30rd day Close Prices are called feature matrix, and 31st day Close Price is called target.
+      In the classification task,  feature matrix  is formed by using first 30 day close price of the stock that is the same as regression feature matrix, but target plays a deterministic role. 
+      Target matrix is considering raito of 31 st day high price  and  30 rd day close price. 
 
 ## Linear Regression 
       
@@ -23,7 +27,8 @@
  
       As for RL, I researched the method that is used to estimate stock price. I found  the RL  method being an area of Machine Learning. 
       This method is mainly talk about the interaction between environment and the result. 
-      The idea behind the RL interacting with the environment many times and getting the reward or penalty with respect to action result then it will find the optimal way and result by gaining experience. In this method has so many submethod but i want to work Quality-table (Q-table).
+      The idea behind the RL interacting with the environment many times and getting the reward or penalty with respect to action result then it will find the optimal way and result by gaining experience.
+      In this method has so many submethod but i want to work Quality-table (Q-table).
 
       --- Elements of RL beyond agent and environment:
           -> policy
