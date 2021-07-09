@@ -28,15 +28,19 @@
           -> reward signal
           -> value function
           -> model 
-    policy: it stands for the learning agent's way of behaving.
-    reward signal: it stands for the RL. Each step of the environment sends a single number that can be accepted as a reward.
-    value function: it stands for the what is good in the long process and an action would be accumulate over the next steps.
-    model: it stands for mimics the behaviour of the environment which allows interfaces to be made a decision about how it can behave.
-    *** the learner or decision maker is called agent. 
+    policy: it stands for the learning agent's way of behaving at a given time.
+    reward signal: it stands for the RL. Each step of the environment sends a single number that can be accepted as a reward. This signal defines what are the good and bad events for the agent.
+    
+    value function: it stands for the what is good in the long process and an action would be accumulate over the next steps. The value of the state expect to accumulate over the future starting from the state.
+    model: it stands for mimics the behaviour of the environment which allows interfaces to be made a decision about how it can behave. The behaviour of the environment that allows inferences to be made about how the environment will behave. 
+    
+    The learner or decision maker is called agent. The thing it interacts with comprising everything outside the agent is called environment in this project stock price results.
+    These interact continuously, the agent select the actions and environment responds the action result and present the new case for the agent. Environment gives the reward of the action that is a special numerical value multipling with gamma and agent tries to maximize this value over time. 
+    
     
   ### Q-Table  
   
-     Q-Learning seeks to find best action to take given current state. Q stands for the Quality.
+     Q-Learning seeks to find best action to take given current state. Q stands for the Quality and also it seeks to learn a policy maximizing the reward. At begining, Q-table or it can be called as matrix is initiliazed to zero. When the state is done, then the Q-table would be updated. After updating,, Q-table would be getting reference point for the agent.
      In this project, values [State, Action] initialized to zero and then update and store q-values after an state that is set 100 action. The sample run is stated below belongs to GoldDataSet and it shows us selling case profit with respect to state period. After the period result, Q-table is updated. 
      Q-table can be seen as a reference point for our agent to select the best way. 
   
