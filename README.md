@@ -35,16 +35,19 @@
           -> reward signal
           -> value function
           -> model 
-    policy: it stands for the learning agent's way of behaving at a given time.
-    reward signal: it stands for the RL. Each step of the environment sends a single number that can be accepted as a reward. 
+    The learner or decision maker is called agent.     
+   
+      policy: it stands for the learning agent's way of behaving at a given time.
+      reward signal: it stands for the RL. Each step of the environment sends a single number that can be accepted as a reward. 
     This signal defines what are the good and bad events for the agent.
     
-    value function: it stands for the what is good in the long process and an action would be accumulate over the next steps. 
+       value function: it stands for the what is good in the long process and an action would be accumulate over the next steps. 
     The value of the state expect to accumulate over the future starting from the state.
-    model: it stands for mimics the behaviour of the environment which allows interfaces to be made a decision about how it can behave. 
+      
+      model: it stands for mimics the behaviour of the environment which allows interfaces to be made a decision about how it can behave. 
     The behaviour of the environment that allows inferences to be made about how the environment will behave. 
     
-    The learner or decision maker is called agent. 
+    
     The thing it interacts with comprising everything outside the agent is called environment in this project stock price results.
     These interact continuously, the agent select the actions and environment responds the action result and present the new case for the agent.
     Environment gives the reward of the action that is a special numerical value multipling with gamma and agent tries to maximize this value over time. 
