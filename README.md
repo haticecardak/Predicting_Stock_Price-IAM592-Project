@@ -39,7 +39,8 @@
     model: it stands for mimics the behaviour of the environment which allows interfaces to be made a decision about how it can behave. 
     The behaviour of the environment that allows inferences to be made about how the environment will behave. 
     
-    The learner or decision maker is called agent. The thing it interacts with comprising everything outside the agent is called environment in this project stock price results.
+    The learner or decision maker is called agent. 
+    The thing it interacts with comprising everything outside the agent is called environment in this project stock price results.
     These interact continuously, the agent select the actions and environment responds the action result and present the new case for the agent.
     Environment gives the reward of the action that is a special numerical value multipling with gamma and agent tries to maximize this value over time. 
     
