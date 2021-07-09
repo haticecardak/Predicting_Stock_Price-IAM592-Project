@@ -125,7 +125,7 @@ for key in data.keys():
     
     plt.figure()
     plt.plot(np.sum(rewards,axis=1))
-    plt.title('{} Rewards Per Episode'.format(key))
+    plt.title('{} Rewards Per State'.format(key))
     plt.show(block=False)
       
 
